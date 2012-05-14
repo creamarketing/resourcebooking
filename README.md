@@ -6,7 +6,7 @@ Requires a [`silverstripe-installer`](http://github.com/silverstripe/silverstrip
 Requires the following modules from silverstripe:  
 [`silverstripe-installer`](http://github.com/silverstripe/silverstripe-installer) (branch 2.4), use as base project  
 [`sapphire`](http://github.com/silverstripe/sapphire) (branch 2.4)  
-[`cms`](http://github.com/silverstripe/cms) (branch 2.4)  
+[`cms`](http://github.com/silverstripe/silverstripe-cms) (branch 2.4)  
 [`pdfrendition`](http://github.com/nyeholt/silverstripe-pdfrendition)  
 
 Requires the following modules from creamarketing:  
