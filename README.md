@@ -10,11 +10,11 @@ Requires the following modules from silverstripe:
 [`pdfrendition`](http://github.com/nyeholt/silverstripe-pdfrendition)  
 
 Requires the following modules from creamarketing:  
-[creamarketing](http://github.com/creamarketing/creamarketing)  
-[dataobject_manager](http://github.com/creamarketing/DataObjectManager)  
-[dialog_dataobject_manager](http://github.com/creamarketing/DialogDataObjectManager)  
+[`creamarketing`](http://github.com/creamarketing/creamarketing)  
+[`dataobject_manager`](http://github.com/creamarketing/DataObjectManager)  
+[`dialog_dataobject_manager`](http://github.com/creamarketing/DialogDataObjectManager)  
 
 ## Installation
 First create a silverstripe project (for example via [`silverstripe-installer`](http://github.com/silverstripe/silverstripe-installer)).  
-Configure a database as normal in mysite/_config.php. Also configure at least one allowed locale for Translatable.  
-Then install the necessary modules (preferably by cloning the corresponding git repositories) and do a /dev/build.  
+Configure a database as normal in `mysite/_config.php` and configure at least one allowed locale for `Translatable` (via `Translatable::set_allowed_locales()`).  
+Then install the necessary modules (preferably by cloning the corresponding git repositories) and do a `/dev/build`.  
