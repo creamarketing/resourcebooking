@@ -3,6 +3,7 @@
 Resource booking module for the [SilverStripe](http://silverstripe.org) project.  
 Requires a [`silverstripe-installer`](http://github.com/silverstripe/silverstripe-installer) base project (branch 2.4) in which it should be installed as a normal module.
 
+## Requirements
 Requires the following modules from silverstripe:  
 [`silverstripe-installer`](http://github.com/silverstripe/silverstripe-installer) (branch 2.4), use as base project  
 [`sapphire`](http://github.com/silverstripe/sapphire) (branch 2.4)  
