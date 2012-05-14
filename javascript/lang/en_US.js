@@ -1,0 +1,45 @@
+if(typeof(ss) == 'undefined' || typeof(ss.i18n) == 'undefined') {
+	if(typeof(console) != 'undefined') console.error('Class ss.i18n not defined');
+} else {
+	ss.i18n.addDictionary('en_US', {
+		'BookingCalendar.TODAY': 'today',
+		'BookingCalendar.MONTH': 'month',
+		'BookingCalendar.WEEK': 'week',
+		'BookingCalendar.DAY': 'day',
+		'BookingCalendar.ALLDAY': 'all-day',
+		'BookingCalendar.MONTHNAMES': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+		'BookingCalendar.MONTHNAMESSHORT': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+		'BookingCalendar.DAYNAMES': ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+		'BookingCalendar.DAYNAMESSHORT': ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+		'BookingCalendar.BOOKINGDIALOGTITLE': 'Book time',
+		'BookingCalendar.LOGINDIALOGTITLE': 'Please login or register',
+		'BookingCalendar.PROFILEDIALOGTITLE': 'Add profile',
+		'BookingCalendar.DELETEDIALOGTITLE': 'Delete booking',
+		'BookingCalendar.MOVEDIALOGTITLE': 'Move booking',
+		'BookingCalendar.SENDMESSAGEDIALOGTITLE': 'Send message',
+		'BookingCalendar.ADDTIMEDIALOGTITLE': 'Add working hours',
+		'BookingCalendar.REMOVETIMEDIALOGTITLE': 'Remove working hours',
+		'BookingCalendar.EDITREQUESTDIALOGTITLE': 'Edit booking request',
+		'BookingCalendar.EDITBOOKINGDIALOGTITLE': 'Edit booking',
+		'BookingCalendar.PRINT': 'print',
+		'BookingCalendar.OK': 'Ok',
+		'BookingCalendar.CANCEL': 'Cancel',
+		'BookingCalendar.BOOK': 'Book',
+		'BookingCalendar.CONTINUE': 'Continue',
+		'BookingCalendar.BACK': 'Back',
+		'BookingCalendar.SAVE': 'Save',
+		'BookingCalendar.YES': 'Yes',
+		'BookingCalendar.NO': 'No',
+		'BookingCalendar.MOVE': 'Move',
+		'BookingCalendar.SEND': 'Send',
+		'BookingCalendar.CONFIRMEDITBOOKING': 'Are you sure you want to edit the booking?',
+		'BookingCalendar.EDITSINGLERECURRING': 'Edit this only this booking',
+		'BookingCalendar.EDITDAYRECURRING': 'Edit all recurring on this day',
+		'BookingCalendar.EDITALLRECURRING': 'Edit all recurring',
+		
+		'ResourceBookingReport.LOADING': 'Generating report...',
+		'ResourceBookingReport.PRINT': 'Print',
+		'ResourceBookingReport.SAVEPDF': 'Save PDF',
+		'ResourceBookingReport.CLOSE': 'Close'
+	});
+}

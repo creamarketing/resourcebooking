@@ -1,0 +1,55 @@
+table {
+	margin-top: 10px;
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 14px;
+}
+
+th {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+
+td, th {
+	text-align: left;
+	padding: 2px 10px 2px 10px;
+}
+
+tr.underlined td, td.underlined {
+	border-bottom: 1px solid #ccc;
+}
+tr.overlined td, td.overlined {
+	border-top: 1px solid #ccc;
+}
+tr.bold td, .bold {
+	font-weight: bold;
+}
+tr.empty td {
+	height: 5px;
+}
+tr.hovered {
+	background: #f9fbc4;
+	cursor: pointer;
+}
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.big {
+	font-size: 18px;
+}
+
+.Page {
+	margin-bottom: 20px;
+	page-break-before: always;
+}
+	.Page.first {
+		page-break-before: avoid;
+	}

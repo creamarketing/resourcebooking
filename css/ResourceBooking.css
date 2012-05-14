@@ -1,0 +1,696 @@
+#BookingCalendarContainer {
+	background: #fff;
+	overflow: hidden;
+	padding: 0;
+}
+
+#BookingCalendar {
+	clear: both;
+}
+	#BookingCalendar table.fc-header {
+		overflow: visible;
+	}
+
+#BookingCalendarDialog {
+	overflow: visible;
+}
+
+table.fc-agenda-slots tr.hovered {
+	background-color: #aaa;
+}
+
+tr.fc-major th {
+	font-weight: bold !important;
+}
+
+span.rk-workweek {
+	font-weight: bold;
+}
+
+#BookingEditPopup_ResourceBookingForm .Actions,
+#Form_BookingMemberLoginForm .Actions,
+#MemberLoginForm_BookingMemberLoginForm .Actions,
+#Form_BookingMemberRegistrationForm .Actions,
+form.ResourceBookingForm .Actions,
+#Form_BookingRequestEditForm .Actions {
+	display: none;
+}
+
+#MemberPageLogin {
+	height: 410px;
+	font-size: 1.1em;
+}
+	#MemberPageLogin #MemberLoginForm_BookingMemberLoginForm .Actions,
+	#MemberPageLogin #Form_BookingMemberRegistrationForm .Actions {
+		display: block;
+	}
+
+#MemberLoginForm_BookingMemberLoginForm,
+#Form_BookingMemberRegistrationForm {
+	margin-top: 10px;
+}
+	#MemberLoginForm_BookingMemberLoginForm .middleColumn,
+	#Form_BookingMemberRegistrationForm	.middleColumn,
+	#Form_BookingProfileForm .middleColumn {
+		margin: 2px 10px 10px 0;
+	}
+	#MemberLoginForm_BookingMemberLoginForm p#Remember label {
+		margin: 0;
+	}
+
+form.ResourceBookingForm label {
+	float: left;
+	clear: left;
+	width: 100px;
+	height: 20px;
+	font-weight: bold;
+}
+	form.ResourceBookingForm label.nolabel {
+		clear: right;
+		font-weight: normal;
+		width: 180px
+	}
+	form.ResourceBookingForm label.ResourceNameLabel {
+		width: 300px;
+	}
+	
+form.ResourceBookingForm .field {
+	float: left;
+	clear: left;
+	padding-bottom: 5px;
+}
+form.ResourceBookingForm .middleColumn {
+	float: left;
+	margin: 0;
+	padding: 0;
+	clear: none;
+	width: 180px !important;
+	background: #fff;
+}
+form.ResourceBookingForm .dialogtabset .tab {
+	min-height: 200px;
+}
+
+#Info {
+	float: left;
+	margin-bottom: 10px;
+}
+	#Info label {
+		float: left;
+		clear: left;
+		width: 75px;
+		height: 20px;
+	}
+	#Info span {
+		float: left;
+	}
+	#Info select {
+		float: left;
+		padding: 0;
+		font-weight: normal;
+		min-width: 150px;
+	}
+	#Info select option.category {
+		font-weight: bold;
+		color: #777;
+	}
+	#Info ul.ui-autocomplete {
+		z-index: 999 !important;
+		max-height: 400px !important;
+		overflow-y: auto !important;
+	}
+	#Info ul.ui-autocomplete li,
+	#Info ul.ui-autocomplete li a {
+		overflow: hidden;
+	}
+	#Info input.ui-autocomplete-input,
+	#ServiceIDText input,
+	#CustomerOrganizationIDText input,
+	#CustomerGroupIDText input,
+	#MemberIDText input {
+		background: transparent url(../../sapphire/images/toggle-closed.gif) no-repeat top right;
+		border: 1px solid #7d7e88;
+		height: 18px;
+		width: 160px;
+		padding: 0 12px 0 2px;
+		-moz-border-radius: 3px 3px 3px 3px;
+		-webkit-border-radius: 3px 3px 3px 3px;
+		border-radius: 3px 3px 3px 3px;
+		cursor: pointer;
+		font-weight: normal;
+		font-size: 10px;
+		text-align: left;
+	}
+	#Info .FilterSection {
+		float: left;
+		width: 200px;
+	}
+	#Info #ResourceSection {
+		float: left;
+	}
+		#Info #ResourceSection input {
+			float: left;
+		}
+	#Info #BookingsSection input,
+	#Info #BookingRequestsSection input {
+		float: left;
+	}
+	#Info #BookingsSection label,
+	#Info #BookingRequestsSection label {
+		float: left;
+		clear: none;
+		margin-left: 10px;
+	}
+
+#Filters {
+	float: left;
+	clear: left;
+	margin-bottom: 10px;
+}
+
+#Refresh {
+	float: right;
+	margin-bottom: 10px;
+}
+
+.Output {
+	height: 50px;
+	width: 500px;
+	margin-top: 5px;
+	float: left;
+}
+	.Output .Message {
+		font-size: 12px;
+		font-weight: bold;
+		background-position: 10px center;
+	    background-repeat: no-repeat;
+	    border: 1px solid;
+	    padding: 15px 10px 15px 50px;
+	}
+	.Output .StatusMessage {
+		background-color: #DFF2BF;
+		background-image: url("../../dataobject_manager/images/success.png");
+		color: #4F8A10;
+	}
+	
+	.Output .ErrorMessage {
+		background-color: #FF8080;
+    	border-color: #FF0000;
+	}
+
+#Legend {
+	margin-top: 5px;
+	float: right;
+}
+	#Legend ul {
+		list-style: none;
+	}
+		#Legend ul li {
+			display: block;
+			overflow: hidden;
+			margin-bottom: 2px;
+		}
+		#Legend div.legendColor {
+			width: 20px;
+			height: 20px;
+			border: 1px solid #439B3B;
+			background: #439B3B;
+			float: left;
+			position: relative;
+		}
+			#Legend div.legendColor .fc-event-booking,
+			#Legend div.legendColor .fc-event-recurring {
+				bottom: -3px;
+			}
+		#Legend li label {
+			float: left;
+			margin-left: 5px;
+		}
+
+#MoveBookingDescription {
+	margin-bottom: 20px;
+}
+	#MoveBookingDescription p {
+		margin-bottom: 2px;
+	}
+
+.ui-dialog {
+	overflow: visible;
+}
+
+.ui-autocomplete input {
+	float: right !important;
+}
+.ui-autocomplete label {
+	clear: none !important;
+}
+	.ui-autocomplete label.level0 {
+		width: 135px !important;
+	}
+	.ui-autocomplete label.main {
+		width: 120px !important;
+	}
+	.ui-autocomplete label.level1 {
+		padding-left: 20px;
+		width: 100px !important;
+	}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	float: left !important;
+}
+.ui-dialog-buttonset.left {
+	float: left !important;
+}
+
+.ui-menu-item {
+	overflow: visible !important;
+}
+
+.ui-menu-item .resourceLabel {
+	width: 100px !important;
+	height: auto !important;
+}
+
+label.error {
+	color: #f00;
+	width: 180px !important;
+}
+
+.fc-event-inner .hovered {
+	position: relative;
+	width: 100%;
+	background: #aaa;
+	z-index: 3;
+	opacity: 0.5;
+}
+
+form .field label {
+    font-size: 11px;
+}
+
+form .middleColumn {
+	margin-top: 2px;
+	width: auto;
+}
+
+input.text, textarea {
+	width: 98% !important;
+}
+
+#TempDialogAjaxLoader {
+	height: 350px;
+}
+
+form.ResourceBookingForm {
+	min-height: 350px;
+}
+
+form.ResourceBookingForm .advanceddropdown .middleColumn {
+	width: 300px !important;
+}
+
+form.ResourceBookingForm input.AdvancedDropdown {
+	float: left;
+	margin: 1px 5px 0 0;
+}
+form.ResourceBookingForm input.autocomplete-addButton,
+form.ResourceBookingForm input.autocomplete-editButton {
+	float: left;
+	height: 22px;
+}
+
+#Start input,
+#End input {
+	width: 60px;
+}
+
+form.ResourceBookingForm label {
+	width: 120px;
+}
+
+ul.optionset li label {
+	clear: none !important;
+	font-weight: normal !important;
+}
+
+#Start, #End,
+#RepeatEndDay,
+#PriceGroup .field, #BillingAddressField,
+#ServiceAmountGroup .field, .ServiceOptionGroup .field {
+	clear: none !important;
+}
+
+#BookingEditPopup_ResourceBookingForm_RepeatDays li {
+	clear: none !important;
+	float: left;
+}
+#BookingEditPopup_ResourceBookingForm_RepeatDays li input {
+	margin: 0 4px 0 2px;
+}
+#BookingEditPopup_ResourceBookingForm_RepeatDays li label {
+	width: 20px;
+}
+
+.tab {
+	overflow: hidden;
+	min-height: 300px;
+}
+
+.fc-event-inner {
+	position: relative;
+}
+
+.fc-event-booking {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.fc-event-recurring {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.fc-event-bg.request {
+	background-image: url(../images/reservation.png);
+}
+
+p.field {
+	width: 300px;
+}
+
+div.fieldgroup .middleColumn {
+	width: 410px !important;
+}
+
+.fieldgroupField {
+	overflow: hidden;
+}
+.fieldgroupField.inner {
+	float: left;
+}
+	.fieldgroupField.inner label {
+		font-weight: normal !important;
+	}
+
+#StartDate input,
+#EndDate input {
+	width: 70px !important;
+	font-weight: normal;
+}
+#StartDate .middleColumn,
+#EndDate .middleColumn,
+#Start .middleColumn,
+#End .middleColumn {
+	width: 80px !important;
+}
+
+#SpecificBookingID ul li {
+	
+}
+	#SpecificBookingID ul li label {
+		width: auto;
+	}
+#BookingID input {
+	width: 70px !important;
+	font-weight: normal;
+}
+	#BookingID.specific {
+		clear: none;
+		display: none;
+	}
+		#BookingID.specific .middleColumn {
+			width: auto !important;
+		}
+
+#BookingEditPopup_ResourceBookingForm_RepeatTimes {
+	float: left;
+	width: 30px !important;
+	height: 13px;
+	font-weight: normal;
+}
+
+#BookingEditPopup_ResourceBookingForm_RepeatEeach {
+	float: left;
+}
+
+#BookingEditPopup_ResourceBookingForm_RepeatEachLabel {
+	padding-top: 3px;
+	height: 17px;
+}
+
+#BookingEditPopup_ResourceBookingForm_RepeatStop li label {
+	width: 50px;
+}
+
+#BookingEditPopup_ResourceBookingForm_RepeatTypeText {
+	width: 80px;
+}
+#BookingEditPopup_ResourceBookingForm_RepeatEachText {
+	width: 40px;
+}
+
+#RepeatEndDay {
+	float: left;
+	width: 110px;
+}
+#BookingEditPopup_ResourceBookingForm_RepeatEndDay {
+	width: 100px !important;
+	height: 13px;
+	font-weight: normal;
+}
+
+#RepeatGroup {
+	border: 1px solid #AAAAAA;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px;
+	display: none;
+}
+
+#CheckRepeatButton {
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+}
+#CheckResult {
+	min-height: 50px;
+	width: 275px;
+	float: left;
+}
+	#CheckResult .Message {
+		font-size: 12px;
+		font-weight: bold;
+		background-position: 10px center;
+	    background-repeat: no-repeat;
+	    border: 1px solid;
+	    padding: 15px 10px 15px 50px;
+	}
+	#CheckResult .Success {
+		background-color: #DFF2BF;
+		background-image: url("../../dataobject_manager/images/success.png");
+		color: #4F8A10;
+	}
+	
+	#CheckResult .Error {
+		background-color: #FF8080;
+    	border-color: #FF0000;
+		padding: 5px;
+		min-height: 38px;
+	}
+	
+	#CheckResult .Warning {
+		background-color: #F2EE00;
+    	border-color: #AAA800;
+		padding: 5px;
+		min-height: 38px;
+	}
+	
+#BillingGroup {
+	border: 1px solid #AAAAAA;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px;
+	display: none;
+}
+
+#SubsidizeGroup {
+	border: 1px solid #AAAAAA;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px;
+	display: none;
+	margin-bottom: 5px;
+}
+
+#Provision {
+	width: 40px;
+}
+
+#PriceGroup {
+	margin-top: 5px;
+}
+
+#PriceTable th {
+	font-weight: bold;
+	padding-right: 10px;
+}
+#PriceTable td {
+	padding: 2px;
+}
+#PriceTable #CustomPrice {
+	width: 40px;
+}
+
+#BillingAddressHolder,
+#BillingAddressChoice {
+	float: left;
+}
+#BillingAddressChoice {
+	clear: both;
+	margin-top: 5px;
+}
+
+#BillingAddress {
+	width: 150px !important;
+	font-weight: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	height: 50px;
+	border: 1px solid #aaa;
+	padding: 3px;
+	margin-right: 5px;
+}
+
+#EditBillingAddress {
+	display: block;
+}
+
+#ConfirmationGroup,
+#ConfirmationEmailGroup,
+#ServiceGroup, #ServiceOptionsGroup {
+	border: 1px solid #AAAAAA;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px;
+	display: none;
+}
+
+#ServiceOptionsGroup {
+	display: block;
+}
+
+#BookingEditPopup_ResourceBookingForm_ConfirmationEmail {
+	width: 200px !important;
+}
+
+#BookingEditPopup_ResourceBookingForm_ConfirmBefore {
+	width: 100px !important;
+}
+#ConfirmBefore .middleColumn {
+	float: left;
+	width: 200px !important;
+}
+
+.ResourceBookingForm .DataObjectManager {
+	width: 500px;
+}
+	.ResourceBookingForm .DataObjectManager .bottom-controls .fieldgroupField {
+		float: left;
+	}
+		.ResourceBookingForm .DataObjectManager .bottom-controls .fieldgroupField label {
+			clear: none;
+			width: auto;
+		}
+	.ResourceBookingForm .DataObjectManager .list .dataobject-list li {
+		width: 98% !important;
+	}
+	.ResourceBookingForm .DataObjectManager .list .dataobject-list li.conflicting {
+		background: #FF7777;
+	}
+	.ResourceBookingForm .DataObjectManager .list .dataobject-list div.fields-wrap {
+		width: 85% !important;
+	}
+	.ResourceBookingForm .DataObjectManager .list .dataobject-list div.actions.col {
+		width: 15% !important;
+	}
+
+.ui-dialog-buttonpane .Output {
+	margin-top: 0;
+	width: 300px;
+	height: 40px;
+	overflow: hidden;
+}
+	.ui-dialog-buttonpane .Output .Message {
+		font-size: 12px;
+		font-weight: bold;
+		background-position: 10px center;
+	    background-repeat: no-repeat;
+	    border: 1px solid;
+	    padding: 4px 10px 4px 50px;
+		min-height: 30px;
+	}
+	.ui-dialog-buttonpane .Output .ErrorMessage {
+		padding-left: 10px;
+	}
+
+html, body, .DataObjectManager-popup {
+	margin: 0 !important;
+}
+
+.DataObjectManager-popup {
+	background: #fff !important;
+}
+
+input.ServiceAmount {
+	width: 50px !important;
+	margin: 0 5px 2px 0;
+	float: left;
+}
+
+#ServiceDate .middleColumn {
+	width: 100px !important;
+}
+	#ServiceDate .middleColumn input {
+		font-weight: normal;
+	}
+
+#ServiceTimeGroup input.AdvancedDropdown {
+	width: 60px !important;
+	margin-left: 8px;
+}
+
+input.AdvancedDropdown.ServicePlace {
+	margin-bottom: 3px !important;
+}
+
+#RecurringEditType .middleColumn {
+	width: 300px !important;
+}
+	#RecurringEditType ul.optionset li label {
+		width: 250px;
+	}
+
+#LastStart,
+#LastEnd {
+	float: left;
+}
+
+.LogTable th {
+	font-weight: bold;
+}
+.LogTable td, .LogTable th {
+	padding: 0 5px 0 5px;
+	border-bottom: 1px solid #ccc;
+}
+.LogTable td.col3 {
+	width: 350px;
+}
+
+#PrintCalendar {
+	width: 750px;
+}

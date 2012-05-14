@@ -1,0 +1,8 @@
+table#BookingTable th {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+table#BookingTable th, td {
+	text-align: center;
+}

@@ -1,0 +1,47 @@
+if(typeof(ss) == 'undefined' || typeof(ss.i18n) == 'undefined') {
+	if(typeof(console) != 'undefined') console.error('Class ss.i18n not defined');
+} else {
+	ss.i18n.addDictionary('sv_SE', {
+		'BookingCalendar.TODAY': 'idag',
+		'BookingCalendar.MONTH': 'månad',
+		'BookingCalendar.WEEK': 'vecka',
+		'BookingCalendar.DAY': 'dag',
+		'BookingCalendar.ALLDAY': 'hela dagen',
+		'BookingCalendar.MONTHNAMES': ['Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'],
+		'BookingCalendar.MONTHNAMESSHORT': ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+		'BookingCalendar.DAYNAMES': ['Söndag', 'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag'],
+		'BookingCalendar.DAYNAMESSHORT': ['Sö', 'Må', 'Ti', 'On', 'To', 'Fre', 'Lö'],
+		'BookingCalendar.BOOKINGDIALOGTITLE': 'Boka tid',
+		'BookingCalendar.LOGINDIALOGTITLE': 'Logga in eller registrera dig',
+		'BookingCalendar.PROFILEDIALOGTITLE': 'Lägg till profil',
+		'BookingCalendar.DELETEDIALOGTITLE': 'Avboka',
+		'BookingCalendar.MOVEDIALOGTITLE': 'Flytta bokning',
+		'BookingCalendar.SENDMESSAGEDIALOGTITLE': 'Skicka meddelande',
+		'BookingCalendar.ADDTIMEDIALOGTITLE': 'Lägg till arbetstid',
+		'BookingCalendar.REMOVETIMEDIALOGTITLE': 'Ta bort arbetstid',
+		'BookingCalendar.EDITREQUESTDIALOGTITLE': 'Ändra reservation',
+		'BookingCalendar.EDITBOOKINGDIALOGTITLE': 'Ändra bokning',
+		'BookingCalendar.PRINT': 'skriv ut',
+		'BookingCalendar.OK': 'Ok',
+		'BookingCalendar.CANCEL': 'Avbryt',
+		'BookingCalendar.BOOK': 'Boka',
+		'BookingCalendar.CONTINUE': 'Fortsätt',
+		'BookingCalendar.BACK': 'Tillbaka',
+		'BookingCalendar.SAVE': 'Spara',
+		'BookingCalendar.YES': 'Ja',
+		'BookingCalendar.NO': 'Nej',
+		'BookingCalendar.MOVE': 'Flytta',
+		'BookingCalendar.SEND': 'Skicka',
+		'BookingCalendar.CONFIRMEDITBOOKING': 'Är du säker att du vill ändra bokningen?',
+		'BookingCalendar.CONFIRMCANCELBOOKING': 'Är du säker att du vill avboka bokningen?',
+		'BookingCalendar.CONFIRMREJECTBOOKING': 'Är du säker att du vill förkasta reservationen?',
+		'BookingCalendar.EDITSINGLERECURRING': 'Ändra bara denna bokning',
+		'BookingCalendar.EDITDAYRECURRING': 'Ändra alla återkommande på denna veckodag',
+		'BookingCalendar.EDITALLRECURRING': 'Ändra alla återkommande',
+		
+		'ResourceBookingReport.LOADING': 'Genererar rapport...',
+		'ResourceBookingReport.PRINT': 'Skriv ut',
+		'ResourceBookingReport.SAVEPDF': 'Spara PDF',
+		'ResourceBookingReport.CLOSE': 'Stäng'
+	});
+}

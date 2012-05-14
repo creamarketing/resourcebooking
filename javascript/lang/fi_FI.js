@@ -1,0 +1,45 @@
+if(typeof(ss) == 'undefined' || typeof(ss.i18n) == 'undefined') {
+	if(typeof(console) != 'undefined') console.error('Class ss.i18n not defined');
+} else {
+	ss.i18n.addDictionary('fi_FI', {
+		'BookingCalendar.TODAY': 'tänään',
+		'BookingCalendar.MONTH': 'kuukausi',
+		'BookingCalendar.WEEK': 'viikko',
+		'BookingCalendar.DAY': 'päivä',
+		'BookingCalendar.ALLDAY': 'koko päivä',
+		'BookingCalendar.MONTHNAMES': ['Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu', 'Toukukuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
+		'BookingCalendar.MONTHNAMESSHORT': ['Tam', 'Hel', 'Maa', 'Huh', 'Tou', 'Kes', 'Hei', 'Elo', 'Syy', 'Lok', 'Mar', 'Jou'],
+		'BookingCalendar.DAYNAMES': ['Sunnuntai', 'Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai'],
+		'BookingCalendar.DAYNAMESSHORT': ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
+		'BookingCalendar.BOOKINGDIALOGTITLE': 'Varaa aikaa',
+		'BookingCalendar.LOGINDIALOGTITLE': 'Kirjaudu sisään tai rekisteröidy',
+		'BookingCalendar.PROFILEDIALOGTITLE': 'Lisää profiili',
+		'BookingCalendar.DELETEDIALOGTITLE': 'Poista varaus',
+		'BookingCalendar.MOVEDIALOGTITLE': 'Siirrä varaus',
+		'BookingCalendar.SENDMESSAGEDIALOGTITLE': 'Lähetä viesti',
+		'BookingCalendar.ADDTIMEDIALOGTITLE': 'Lisää työaikaa',
+		'BookingCalendar.REMOVETIMEDIALOGTITLE': 'Poistaa työaikaa',
+		'BookingCalendar.EDITREQUESTDIALOGTITLE': 'Muokkaa varauspyyntö',
+		'BookingCalendar.EDITBOOKINGDIALOGTITLE': 'Muokkaa varaus',
+		'BookingCalendar.PRINT': 'tulostaa',
+		'BookingCalendar.OK': 'Ok',
+		'BookingCalendar.CANCEL': 'Keskeytä',
+		'BookingCalendar.BOOK': 'Varaa',
+		'BookingCalendar.CONTINUE': 'Jatka',
+		'BookingCalendar.BACK': 'Takaisin',
+		'BookingCalendar.SAVE': 'Tallenna',
+		'BookingCalendar.YES': 'Kyllä',
+		'BookingCalendar.NO': 'Ei',
+		'BookingCalendar.MOVE': 'Siirrä',
+		'BookingCalendar.SEND': 'Lähetä',
+		'BookingCalendar.CONFIRMEDITBOOKING': 'Oletko varmaa että haluat muuttaa varauksen?',
+		'BookingCalendar.EDITSINGLERECURRING': 'Muuta vain tämä varaus',
+		'BookingCalendar.EDITDAYRECURRING': 'Muuta kaikki säännölliset samana viikkopäivänä',
+		'BookingCalendar.EDITALLRECURRING': 'Muuta kaikki säännölliset',
+		
+		'ResourceBookingReport.LOADING': 'Luodaan raportti...',
+		'ResourceBookingReport.PRINT': 'Tulostaa',
+		'ResourceBookingReport.SAVEPDF': 'Tallenna PDF',
+		'ResourceBookingReport.CLOSE': 'Sulje'
+	});
+}

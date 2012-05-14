@@ -1,0 +1,24 @@
+.right form .field .middleColumn {
+	background: #fff;
+}
+
+#StartDate, #EndDate {
+	float: left;
+}
+
+#ResourceOrganizationFilterHolder,
+#ResourceGroupFilterHolder,
+#ResourceFilterHolder {
+	float: left;
+}
+
+#Form_ReportForm_CustomerSelection,
+#BookingID {
+	clear: both;
+}
+
+#CustomerOrganizationIDHolder,
+#CustomerGroupIDHolder,
+#CustomerIDHolder {
+	float: left;
+}

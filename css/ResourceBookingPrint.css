@@ -1,0 +1,55 @@
+body {
+	background: #fff !important;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+}
+
+.fc-event {
+	margin: 0 !important;
+	border: 1px solid #000 !important;
+	overflow: hidden !important;
+}
+
+.fc-event-inner {
+	margin: 0 !important;
+	border: 0 !important;
+	overflow: hidden !important;
+}
+
+.fc-event-content, .fc-event-title {
+	overflow: hidden !important;
+}
+
+.fc-event-head {
+	width: auto !important;
+}
+
+.fc-event-bg {
+	display: none !important;
+}
+
+.fc-event .ui-resizable-handle {
+	display: none !important;
+}
+
+.fc-state-highlight {
+	background: none !important;
+}
+
+/* Fixes for PDF rendering, because of different behaviour of the java html renderer */
+#PrintCalendar.pdf .fc-agenda-slots td div {
+	height: 18px !important;
+}
+#PrintCalendar.pdf .fc-event.resource {
+	padding: 1px;
+	border: 1px solid #000 !important;
+}
+#PrintCalendar.pdf .fc-agenda-days .fc-widget-header {
+	width: 95px !important;
+}
+	#PrintCalendar.pdf .fc-agenda-days .fc-widget-header.fc-first {
+		width: 50px !important;
+	}
+	#PrintCalendar.pdf .fc-agenda-days .fc-widget-header.fc-last {
+		width: auto !important;
+	}

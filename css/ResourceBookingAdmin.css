@@ -1,0 +1,88 @@
+#left, #right {
+	background: #fff;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#left ul.tree li a:hover,
+#left ul.tree li a.current {
+	text-decoration: underline;
+}
+
+#right .DataObjectManager {
+	margin-bottom: 20px;
+}
+
+#leftContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#showOrHideLeft {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 12px;
+	height: 24px;
+	display: block;
+	text-decoration: none;
+	background: url(../images/arrowLeft.gif) no-repeat;
+	border-radius: 2px 0 0 2px;
+	-moz-border-radius: 2px 0 0 2px;
+}
+
+#separator {
+	cursor: auto;
+}
+
+#BookingCalendarContainer,
+#Dashboard {
+	position: relative;
+	padding: 20px 40px 20px 40px;
+}
+
+#Dashboard h1 {
+	margin-bottom: 20px;
+}
+#Dashboard h2 {
+	margin-top: 20px;
+}
+#Dashboard table {
+	border-collapse: collapse;
+}
+	#Dashboard table td,
+	#Dashboard table th {
+		padding: 3px 5px 3px 5px;
+		border: 1px solid #000;
+		font-size: 11px;
+	}
+	#Dashboard table th {
+		font-weight: bold;
+		text-align: center;
+	}
+#Dashboard p {
+	font-size: 11px;
+}
+
+img {
+	border: 0;
+}
+
+#BookingEditPopup_ResourceBookingForm #MemberIDSelect,
+#BookingEditPopup_ResourceBookingForm #CustomerGroupIDSelect,
+#BookingEditPopup_ResourceBookingForm #CustomerOrganizationIDSelect {
+	display: none;
+}
+
+table.LogTable th {
+	font-weight: bold;
+}
+table.LogTable td,
+table.LogTable th {
+	padding: 2px 5px 2px 5px;
+}
+
+#QuickMonth {
+	margin-left: 10px;
+	padding: 1px;
+	font-weight: normal;
+}
